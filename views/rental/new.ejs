@@ -1,0 +1,31 @@
+<% include ../partials/header %>
+
+<div class="container form">
+  <div class="sec" style="width:50%;margin:25px auto">
+    <h1 class="text-center text-muted">Add rentals</h1>
+    <form class="form-group" action="/rental" method="post">
+      <input class="form-control" type="text" name="rental[image1]" placeholder="image 1">
+
+      <input class="form-control" type="text" name="rental[image2]" placeholder="image 2">
+
+      <input class="form-control" type="text" name="rental[image3]" placeholder="image 3">
+
+      <input class="form-control" type="text" name="rental[image4]" placeholder="image 4">
+
+      <input class="form-control" type="text" name="rental[roomType]" placeholder="roomType">
+
+      <input class="form-control" type="text" name="rental[bhkType]" placeholder="bhkType">
+
+      <textarea name="rental[address]" id="" cols="30" rows="10"></textarea>
+
+
+      <input class="form-control" type="text" name="rental[roomRent]" placeholder="roomRent">
+
+      <input class="form-control" type="number" name="rental[contact]" placeholder="contact number">
+
+      <button class="form-control btn btn-md btn-success">Add rental</button>
+    </form>
+  </div>
+</div>
+
+<% include ../partials/footer %>

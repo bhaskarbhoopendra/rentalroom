@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+
+<div class="container form">
+  <div class="sec" style="width:50%;margin:25px auto">
+    <h1 class="text-center text-muted">Add owner details</h1>
+    <form class="form-group" action="/owner" method="post">
+      <input class="form-control" type="text" name="owner[firstName]" placeholder="firstName" required>
+
+      <input class="form-control" type="text" name="owner[middleName]" placeholder="middleName" required>
+
+      <input class="form-control" type="text" name="owner[lastName]" placeholder="lastName" required>
+
+      <input class="form-control" type="text" name="owner[email]" placeholder="email" required>
+
+      <input class="form-control" type="text" name="owner[contact]" placeholder="contact" required>
+
+      <input class="form-control" type="text" name="owner[dob]" placeholder="dob" required>
+
+
+      <input class="form-control" type="text" name="rental[adhar]" placeholder="adhar" required>
+
+      <button class="form-control btn btn-md btn-success">Add owner
+
+      </button>
+    </form>
+  </div>
+</div>
+
+<% include ../partials/footer %>

@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+
+<div class="container form">
+  <div class="sec" style="width:50%;margin:25px auto">
+    <h1 class="text-center text-muted">Add tenant details</h1>
+    <form class="form-group" action="/tenant" method="post">
+      <input class="form-control" type="text" name="tenant[firstName]" placeholder="firstName" required>
+
+      <input class="form-co3000ntrol" type="text" name="tenant[middleName]" placeholder="middleName" required>
+
+      <input class="form-control" type="text" name="tenant[lastName]" placeholder="lastName" required>
+
+      <input class="form-control" type="text" name="tenant[email]" placeholder="email" required>
+
+      <input class="form-control" type="text" name="tenant[contact]" placeholder="contact" required>
+
+      <input class="form-control" type="text" name="tenant[dob]" placeholder="dob" required>
+
+
+      <input class="form-control" type="text" name="tenant[adhar]" placeholder="adhar" required>
+
+      <button class="form-control btn btn-md btn-success">Add tenant</button>
+    </form>
+  </div>
+</div>
+
+<% include ../partials/footer %>

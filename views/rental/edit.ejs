@@ -1,0 +1,30 @@
+<% include ../partials/header %>
+
+<div class="container form">
+  <div class="sec" style="width:50%;margin:25px auto">
+    <h1 class="text-center text-muted">Add rentals</h1>
+    <form action="/rental/<%=rental._id%>?_method=PUT" method="POST">
+      <input class="form-control" type="text" name="rental[image1]" value="<%=rental.image1%>">
+
+      <input class="form-control" type="text" name="rental[image2]" value="<%=rental.image2%>">
+
+      <input class="form-control" type="text" name="rental[image3]" value="<%=rental.image3%>">
+
+      <input class="form-control" type="text" name="rental[image4]" value="<%=rental.image4%>">
+
+      <input class="form-control" type="text" name="rental[roomType]" value="<%=rental.roomType%>">
+
+      <input class="form-control" type="text" name="rental[bhkType]" value="<%=rental.bhkType%>">
+
+      <textarea name="rental[address]" id="" cols="30" rows="10"><%=rental.address%></textarea>
+
+      <input class="form-control" type="text" name="rental[roomRent]" value="<%=rental.roomRent%>">
+
+      <input class="form-control" type="number" name="rental[contact]" value="<%=rental.contact%>">
+
+      <button class="form-control btn btn-md btn-success">Edit Event</button>
+    </form>
+  </div>
+</div>
+
+<% include ../partials/footer %>
