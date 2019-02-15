@@ -29,7 +29,7 @@ router.get('/rentalform', (req, res) => {
 router.post('/', (req, res) => {
   Rental.create(req.body.rental)
     .then((newRental) => {
-      res.redirect('/');
+      res.redirect('/rental');
     })
     .catch(err => console.log(err));
 })

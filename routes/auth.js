@@ -23,7 +23,7 @@ router.post("/register", function (req, res) {
       return res.render("auth/register");
     }
     passport.authenticate("local")(req, res, function () {
-      res.redirect("/")
+      res.redirect("/rental")
     });
   });
 });

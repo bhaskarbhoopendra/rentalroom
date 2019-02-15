@@ -35,18 +35,16 @@
         <li class="nav-item active">
           <a style="color:#000" class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
         </li>
+
+        <% if(!currentUser){ %>
         <li class="nav-item">
-          <a style="color:#000" class="nav-link" href="/owner/form">OwnerLogin</a>
+          <a style="color:#000" class="nav-link" href="/auth/login">OwnerLogin</a>
         </li>
         <li class="nav-item">
           <a style="color:#000" class="nav-link" href="/auth/register">OwnerSignup</a>
         </li>
-        <% if(!currentUser){ %>
         <li class="nav-item">
           <a style="color:#000" class="nav-link" href="/tenant/form">TenantLogin</a>
-        </li>
-        <li class="nav-item">
-          <a style="color:#000" class="nav-link" href="/rental/rentalform">Create Rental</a>
         </li>
         <li class="nav-item">
           <a style="color:#000" class="nav-link" href="/auth/register">TenantSignup</a>
@@ -58,6 +56,9 @@
         <li class="nav-item">
           <a style="color:#000" class="nav-link" href="#">Welcome
             <%=currentUser.username%></a></a>
+        </li>
+        <li class="nav-item">
+          <a style="color:#000" class="nav-link" href="/rental/rentalform">Create Rental</a>
         </li>
         <li class="nav-item">
           <a style="color:#000" class="nav-link" href="/auth/logout">Logout</a></a>

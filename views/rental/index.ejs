@@ -1,23 +1,30 @@
 <% include ../partials/header %>
+<div class="container">
+  <div class="row">
+    <%rentals.forEach(function(rental){%>
 
-<%rentals.forEach(function(rental){%>
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="<%=rental.image1%>" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">
-      <%=rental.bhkType%>
-    </h5>
-    <h5 class="card-title">
-      <%=rental.address%>
-    </h5>
-    <h5 class="card-title">
-      <%=rental.rent%>
-    </h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a class="btn btn-xl btn-success" href="/rental/<%=rental._id%>">Know more</a>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="<%=rental.image1%>" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">
+            <%=rental.bhkType%>
+          </h5>
+          <h5 class="card-title">
+            <%=rental.address%>
+          </h5>
+          <h5 class="card-title">
+            <%=rental.rent%>
+          </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a class="btn btn-xl btn-success" href="/rental/<%=rental._id%>">Know more</a>
+        </div>
+      </div>
+
+    </div>
+    <%})%>
   </div>
 </div>
-<%})%>
-
 
 <% include ../partials/footer %>
